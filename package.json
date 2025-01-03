@@ -2,11 +2,12 @@
   "name": "studio",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tailwind":	"postcss ./src/style.css -o ./public/output.css",
+    "tailwindDev": "postcss  ./src/style.css -o ./public/output.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
